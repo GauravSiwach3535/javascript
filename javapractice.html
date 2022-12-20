@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainDiv" class="mainDivclass">
+        <ul>
+            <li>Home</li>
+            <li>about line</li>
+            <li>Next</li>
+            <li>Setting</li>
+
+        </ul>
+        <h1 id="headling">events and handlers</h1>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quae incidunt beatae dolor molestias autem, ratione reiciendis quidem dignissimos magni sint, enim aliquam facere architecto pariatur ad quas deserunt laboriosam.
+
+        </p>
+        <input id="btn" type="button" value="submit" onclick="hidepara()">
+    </div>
+    <script>
+        let main = document.getElementById("mainDiv");
+        console.log(main);
+        let paragraph = document.getElementById("para");
+        let button = document.getElementById("btn");
+        button.oneclick = function
+        function hidepara(){
+          if  (paragraph.style.display = "none"){
+            paragraph.style.display = "none";
+          }
+          else{
+                paragraph.style.display = "block"
+          }
+        }
+        paragraph.addEventListener('mouseover',function check(){
+            console.log("over paragraph")
+        })
+        paragraph.addEventListener('mouseout',function check(){
+            console.log("out paragraph")
+        })
+
+    </script>
+</body>
+</html>
